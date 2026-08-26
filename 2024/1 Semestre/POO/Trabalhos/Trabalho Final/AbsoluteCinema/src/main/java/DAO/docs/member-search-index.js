@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"DAO","c":"VendasDAO","l":"VendasDAO()","u":"%3Cinit%3E()"}];updateSearchResults();

@@ -1,0 +1,14 @@
+Nome;frequência;RA;Nota da P1;Nota da P2
+Felipe do Amparo Lauria;97;231044291;8.5;7
+Bruna Fontes Castro;100;230978456;8;8.3
+Enrico Laguna Panico;85;2310567891;6.2;10
+Breno Marques Bernal;100;231045781;8;10
+Andre Luis Mendes Júnior;85;231074856;8;8
+Aleardo Manacero Júnior;74;231745896;9.9;0
+Camila Baleiro Okado Tamashiro;100;231564987;9.5;10
+Wallace Correa De Oliveira Casaca;87;230230230;10;10
+Lucas Correia Ribas;87;234789156;4.5;4.9
+Antonio Brasilia;100;000000001;7.5;8
+Rogeria Cristiane Grãtão de Souza;99;231547869;9.5;7.1
+Rodrigo Capobianco Guido;100;100000000;10;10
+Leandro Alves Neves;74;231054789;9;9

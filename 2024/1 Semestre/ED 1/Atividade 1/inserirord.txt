@@ -1,0 +1,20 @@
+int curr = 0;
+    while (curr < L->nelem && L->A[curr].chave < x.chave) {
+      curr++;
+    }
+
+    if (Cheia(L) || curr > L->nelem){
+      //Lista cheia ou posição não existe
+      return FALSE;
+    } 
+
+    // Desloca os elementos maiores para a direita
+    for (int c = L->nelem; c > curr; c--) {
+      L->A[c] = L->A[c - 1];
+    }
+
+    // Insere o novo elemento na posição correta
+    L->A[curr] = x;
+    L->nelem++;
+    return TRUE;
+  }

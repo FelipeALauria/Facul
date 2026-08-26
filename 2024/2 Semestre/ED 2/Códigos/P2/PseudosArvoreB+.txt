@@ -1,0 +1,132 @@
+FUNÇÃO Busca(arvore, chave):
+    # A busca começa pela raiz da árvore
+    nó_atual ← raiz da árvore
+    
+    # Percorre os nós internos até encontrar o nó folha
+    ENQUANTO nó_atual NÃO é nó folha:
+        # Encontrar o índice do filho onde a chave deve estar
+        i ← 0
+        ENQUANTO i < número de chaves de nó_atual E nó_atual.chaves[i] < chave:
+            i ← i + 1
+        
+        # Avança para o filho correspondente
+        nó_atual ← nó_atual.filhos[i]
+    
+    # Quando chega no nó folha, busca pela chave
+    PARA cada chave k EM nó_atual.chaves:
+        # Se a chave for encontrada, retorna o valor associado
+        SE k = chave:
+            RETORNAR k e nó_atual.dados[k]
+    
+    # Se a chave não foi encontrada, retorna que ela não está na árvore
+    RETORNAR "Chave não encontrada"
+
+
+FUNÇÃO Inserir(arvore, chave, valor):
+    # A inserção começa pela raiz da árvore
+    nó_atual ← raiz da árvore
+    
+    # Percorre os nós internos até encontrar o nó folha
+    ENQUANTO nó_atual NÃO é nó folha:
+        # Encontrar o índice do filho onde a chave deve estar
+        i ← 0
+        ENQUANTO i < número de chaves de nó_atual E nó_atual.chaves[i] < chave:
+            i ← i + 1
+        
+        # Avança para o filho correspondente
+        nó_atual ← nó_atual.filhos[i]
+    
+    # Insere a chave e o valor no nó folha
+    INSERIR chave e valor em nó_atual
+    
+    # Se o nó folha estiver cheio, precisa dividir
+    SE nó_atual está cheio:
+        DIVIDIR nó_atual
+        AJUSTAR a árvore para manter as propriedades da árvore B+
+
+
+FUNÇÃO Remover(arvore, chave):
+    # A remoção começa pela raiz da árvore
+    nó_atual ← raiz da árvore
+    
+    # Percorre os nós internos até encontrar o nó folha
+    ENQUANTO nó_atual NÃO é nó folha:
+        # Encontrar o índice do filho onde a chave deve estar
+        i ← 0
+        ENQUANTO i < número de chaves de nó_atual E nó_atual.chaves[i] < chave:
+            i ← i + 1
+        
+        # Avança para o filho correspondente
+        nó_atual ← nó_atual.filhos[i]
+    
+    # Remove a chave do nó folha
+    REMOVER chave de nó_atual
+    
+    # Se o nó folha estiver abaixo da capacidade mínima, precisa ajustar
+    SE nó_atual está abaixo da capacidade mínima:
+        AJUSTAR nó_atual
+        AJUSTAR a árvore para manter as propriedades da árvore B+
+
+
+FUNÇÃO DIVIDIR(nó):
+    # Divide o nó em dois nós
+    meio ← número de chaves de nó / 2
+    
+    # Cria um novo nó para armazenar a segunda metade das chaves e filhos
+    novo_nó ← criar novo nó
+    
+    # Copia a segunda metade das chaves e filhos para o novo nó
+    PARA i DE meio ATÉ número de chaves de nó - 1:
+        novo_nó.chaves[i - meio] ← nó.chaves[i]
+        novo_nó.filhos[i - meio] ← nó.filhos[i]
+    
+    # Ajusta o número de chaves no nó original
+    nó.número_de_chaves ← meio
+    
+    # Se o nó original for a raiz, cria uma nova raiz
+    SE nó é raiz:
+        nova_raiz ← criar novo nó
+        nova_raiz.chaves[0] ← nó.chaves[meio]
+        nova_raiz.filhos[0] ← nó
+        nova_raiz.filhos[1] ← novo_nó
+        raiz da árvore ← nova_raiz
+    SENÃO:
+        # Insere a chave do meio no pai do nó original
+        pai ← nó.pai
+        INSERIR chave do meio e novo_nó em pai       
+
+
+FUNÇÃO CONCATENAR(nó):
+    # Se o nó estiver abaixo da capacidade mínima, precisa ajustar
+    SE nó está abaixo da capacidade mínima:
+        pai ← nó.pai
+        índice ← índice de nó em pai.filhos
+        
+        # Verifica o nó irmão à esquerda
+        SE índice > 0 E pai.filhos[índice - 1] tem chaves suficientes:
+            irmão_esquerdo ← pai.filhos[índice - 1]
+            # Move a última chave do irmão esquerdo para o nó atual
+            MOVER última chave e filho de irmão_esquerdo para nó
+            # Atualiza a chave no pai
+            pai.chaves[índice - 1] ← nó.chaves[0]
+        # Verifica o nó irmão à direita
+        SENÃO SE índice < número de filhos de pai - 1 E pai.filhos[índice + 1] tem chaves suficientes:
+            irmão_direito ← pai.filhos[índice + 1]
+            # Move a primeira chave do irmão direito para o nó atual
+            MOVER primeira chave e filho de irmão_direito para nó
+            # Atualiza a chave no pai
+            pai.chaves[índice] ← irmão_direito.chaves[0]
+        SENÃO:
+            # Se nenhum irmão tem chaves suficientes, concatena com um irmão
+            SE índice > 0:
+                irmão_esquerdo ← pai.filhos[índice - 1]
+                CONCATENAR nó com irmão_esquerdo
+                REMOVER chave e filho de pai
+            SENÃO:
+                irmão_direito ← pai.filhos[índice + 1]
+                CONCATENAR nó com irmão_direito
+                REMOVER chave e filho de pai
+                
+        # Se o pai estiver abaixo da capacidade mínima, ajusta o pai
+        SE pai está abaixo da capacidade mínima:
+            CONCATENAR(pai)

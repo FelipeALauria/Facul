@@ -1,0 +1,48 @@
+// Pseudo code for R-Tree operations
+
+// Insert a new entry into the R-Tree
+function insert(entry, node):
+    if node is a leaf:
+        add entry to node
+        if node overflows:
+            split(node)
+    else:
+        choose the best child node for entry
+        insert(entry, chosen child node)
+        adjust bounding box of node
+
+// Remove an entry from the R-Tree
+function remove(entry, node):
+    if node is a leaf:
+        remove entry from node
+        if node underflows:
+            handleUnderflow(node)
+    else:
+        choose the child node that contains entry
+        remove(entry, chosen child node)
+        adjust bounding box of node
+
+// Search for an entry in the R-Tree
+function search(entry, node):
+    if node is a leaf:
+        if entry is in node:
+            return entry
+        else:
+            return null
+    else:
+        for each child node:
+            if bounding box of child node intersects with entry:
+                result = search(entry, child node)
+                if result is not null:
+                    return result
+        return null
+
+// Split a node in the R-Tree
+function split(node):
+    distribute entries of node into two new nodes
+    if node is the root:
+        create a new root and add the two new nodes as children
+    else:
+        add the two new nodes to the parent of node
+        if parent overflows:
+            split(parent)

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="300.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-color: #570128; -fx-border-radius: 20; -fx-border-width: 2 2 2 2; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.absolutecinema.AddNewEmployeeController">
+   <children>
+      <Pane layoutX="20.0" layoutY="24.0" prefHeight="76.0" prefWidth="260.0" style="-fx-background-radius: 20; -fx-background-color: #c6c6c6; -fx-border-width: 2 2 2 2; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: #c6c6c6;">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="90.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/free-user-icon-3296-thumb.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="mensagemUsuario1" layoutX="76.0" layoutY="11.0" prefHeight="54.0" prefWidth="171.0" text="Novo Funcionário" textFill="#570128">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="campoNome" layoutX="20.0" layoutY="146.0" prefHeight="44.0" prefWidth="260.0" promptText="Digite o nome do funcionário" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #ffffff;">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoEscala" layoutX="20.0" layoutY="274.0" prefHeight="44.0" prefWidth="260.0" promptText="Digite a escala do funcionário" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoSalario" layoutX="20.0" layoutY="338.0" prefHeight="44.0" prefWidth="260.0" promptText="Digite o salário por hora do funcionário" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoCPF" layoutX="20.0" layoutY="210.0" prefHeight="44.0" prefWidth="260.0" promptText="Digite o CPF do funcionário" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="campoArea" layoutX="20.0" layoutY="402.0" prefHeight="44.0" prefWidth="260.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #ffffff;" />
+      <Button fx:id="botaoAdicionar" layoutX="20.0" layoutY="533.0" mnemonicParsing="false" onAction="#adicionarFuncionario" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 50; -fx-border-radius: 50;" text="Adicionar" textFill="#570128">
+         <font>
+            <Font name="Dubai Regular" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoCancelar" layoutX="160.0" layoutY="533.0" mnemonicParsing="false" onAction="#cancelarOperacao" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 50; -fx-border-radius: 50;" text="Cancelar" textFill="#570128">
+         <font>
+            <Font name="Dubai Regular" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="campoMeta" layoutX="20.0" layoutY="464.0" prefHeight="44.0" prefWidth="260.0" promptText="Digite a meta do funcionário" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="campoFaxina" layoutX="20.0" layoutY="464.0" prefHeight="44.0" prefWidth="260.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #ffffff;" visible="false" />
+   </children>
+</AnchorPane>

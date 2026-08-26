@@ -1,0 +1,71 @@
+﻿Id_aluno;tentativas;tempo;curso;Sexo;dificuldade
+EL1;72;619;Eletrônica;Fem;Normal
+EL2;49;651;Eletrônica;Masc;Difícil
+EL3;52;640;Eletrônica;Fem;Normal
+EL4;119;1195;Eletrônica;Fem;Difícil
+EL5;50;1175;Eletrônica;Masc;Normal
+EL6;44;809;Eletrônica;Masc;Normal
+EL7;299;2160;Eletrônica;Masc;Normal
+EL8;244;1620;Eletrônica;Masc;Normal
+EL9;49;566;Eletrônica;Fem;Normal
+EL10;79;1524;Eletrônica;Fem;Normal
+EL11;94;927;Eletrônica;Masc;Difícil
+EL12;77;839;Eletrônica;Masc;Normal
+EL13;110;1607;Eletrônica;Fem;Difícil
+EL14;131;705;Eletrônica;Masc;Fácil
+EL15;50;952;Eletrônica;Masc;Normal
+EL16;236;2439;Eletrônica;Fem;Difícil
+EL17;184;1013;Eletrônica;Fem;Difícil
+EL18;128;1119;Eletrônica;Masc;Normal
+EL19;182;467;Eletrônica;Fem;Difícil
+EL20;148;966;Eletrônica;Masc;Fácil
+EL21;120;1465;Eletrônica;Fem;Difícil
+EL22;157;579;Eletrônica;Masc;Difícil
+EL23;186;1092;Eletrônica;Masc;Difícil
+EL24;83;908;Eletrônica;Masc;Difícil
+EL25;113;698;Eletrônica;Masc;Normal
+EL26;49;1098;Eletrônica;Masc;Difícil
+EL27;169;919;Eletrônica;Fem;Normal
+EL28;67;2005;Eletrônica;Masc;Normal
+EL29;40;2252;Eletrônica;Masc;Difícil
+EL30;148;953;Eletrônica;Masc;Normal
+EL31;77;1646;Eletrônica;Masc;Difícil
+EL32;107;565;Eletrônica;Fem;Difícil
+EL33;136;813;Eletrônica;Fem;Normal
+EL34;7;654;Eletrônica;Masc;Difícil
+EL35;130;933;Eletrônica;Masc;Fácil
+DS1;50;525;Desenvolvimento de Sistemas;Fem;Difícil
+DS2;111;980;Desenvolvimento de Sistemas;Fem;Normal
+DS3;64;485;Desenvolvimento de Sistemas;Masc;Difícil
+DS4;70;625;Desenvolvimento de Sistemas;Masc;Fácil
+DS5;89;776;Desenvolvimento de Sistemas;Fem;Difícil
+DS6;140;1403;Desenvolvimento de Sistemas;Fem;Difícil
+DS7;49;625;Desenvolvimento de Sistemas;Masc;Difícil
+DS8;22;446;Desenvolvimento de Sistemas;Fem;Difícil
+DS9;216;1344;Desenvolvimento de Sistemas;Masc;Normal
+DS10;35;557;Desenvolvimento de Sistemas;Fem;Difícil
+DS11;94;528;Desenvolvimento de Sistemas;Masc;Normal
+DS12;64;409;Desenvolvimento de Sistemas;Masc;Normal
+DS13;94;2887;Desenvolvimento de Sistemas;Masc;Difícil
+DS14;36;1884;Desenvolvimento de Sistemas;Masc;Normal
+DS15;91;1505;Desenvolvimento de Sistemas;Masc;Difícil
+DS16;25;1031;Desenvolvimento de Sistemas;Fem;Normal
+DS17;90;913;Desenvolvimento de Sistemas;Masc;Normal
+DS18;55;1524;Desenvolvimento de Sistemas;Masc;Normal
+DS19;164;808;Desenvolvimento de Sistemas;Masc;Difícil
+DS20;235;2129;Desenvolvimento de Sistemas;Masc;Normal
+DS21;98;1032;Desenvolvimento de Sistemas;Fem;Difícil
+DS22;65;550;Desenvolvimento de Sistemas;Fem;Fácil
+DS23;168;1088;Desenvolvimento de Sistemas;Masc;Normal
+DS24;41;1194;Desenvolvimento de Sistemas;Masc;Difícil
+DS25;101;1258;Desenvolvimento de Sistemas;Fem;Difícil
+DS26;84;1516;Desenvolvimento de Sistemas;Fem;Normal
+DS27;87;759;Desenvolvimento de Sistemas;Fem;Difícil
+DS28;51;720;Desenvolvimento de Sistemas;Masc;Fácil
+DS29;44;619;Desenvolvimento de Sistemas;Fem;Difícil
+DS30;144;2139;Desenvolvimento de Sistemas;Masc;Difícil
+DS31;223;1599;Desenvolvimento de Sistemas;Fem;Difícil
+DS32;90;233;Desenvolvimento de Sistemas;Masc;Difícil
+DS33;150;551;Desenvolvimento de Sistemas;Masc;Normal
+DS34;31;1158;Desenvolvimento de Sistemas;Fem;Fácil
+DS35;109;1643;Desenvolvimento de Sistemas;Fem;Normal

@@ -1,0 +1,47 @@
+// Pseudo código para inserção em uma árvore 2-4
+Inserir(chave, árvore):
+    se árvore estiver vazia:
+        criar uma nova árvore com a chave
+    senão:
+        nó = raiz da árvore
+        enquanto nó não for folha:
+            se nó estiver cheio:
+                dividir(nó)
+                nó = nó.pai
+            nó = nó.filho_apropriado(chave)
+        inserir_chave_no_nó(chave, nó)
+        se nó estiver cheio:
+            dividir(nó)
+
+// Pseudo código para remoção em uma árvore 2-4
+Remover(chave, árvore):
+    nó = buscar_nó(chave, árvore)
+    se nó for folha:
+        remover_chave_do_nó(chave, nó)
+    senão:
+        substituto = encontrar_sucessor(chave, nó)
+        substituir_chave(chave, substituto, nó)
+        remover_chave_do_nó(substituto, nó.filho_apropriado(substituto))
+    balancear_árvore_se_necessário(nó)
+
+// Pseudo código para busca em uma árvore 2-4
+Buscar(chave, árvore):
+    nó = raiz da árvore
+    enquanto nó não for nulo:
+        se chave estiver no nó:
+            retornar nó
+        nó = nó.filho_apropriado(chave)
+    retornar nulo
+
+// Pseudo código para split (divisão) de um nó em uma árvore 2-4
+Dividir(nó):
+    meio = nó.chaves[1]
+    novo_nó_esquerdo = criar_novo_nó_com_chaves([nó.chaves[0]])
+    novo_nó_direito = criar_novo_nó_com_chaves([nó.chaves[2]])
+    se nó for a raiz:
+        criar_nova_raiz(meio, novo_nó_esquerdo, novo_nó_direito)
+    senão:
+        pai = nó.pai
+        inserir_chave_no_nó(meio, pai)
+        substituir_filho(nó, novo_nó_esquerdo, pai)
+        adicionar_filho(novo_nó_direito, pai)

@@ -1,0 +1,22 @@
+long a
+a <- 10;
+
+long b;
+b < 5;
+
+long c;
+c <- (10 + 2;
+
+if a > 5 {
+    a <- a + 1;
+}
+
+while (a < 10)
+    a <- a + 1;
+}
+
+longlong x;
+x <- 3.5.8;
+
+long y;
+y <- 2 + ;

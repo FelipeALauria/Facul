@@ -1,0 +1,25 @@
+# Build output (Java/Maven etc.)
+**/target/
+
+# Datasets e arquivos grandes (acima ou perto do limite de 100MB do GitHub)
+2024/2 Semestre/Probabilidade e Estatística/Trabalho Final/Códigos/ratings.csv
+2024/2 Semestre/Probabilidade e Estatística/Trabalho Final/Códigos/tags.csv
+2024/2 Semestre/Probabilidade e Estatística/Trabalho Final/ml-32m/ratings.csv
+2024/2 Semestre/Probabilidade e Estatística/Trabalho Final/ml-32m/tags.csv
+
+# Datasets grandes (PCP)
+2025/2 Semestre/Programacao Concorrente Paralela/Projeto 1/linear2000.dat
+2025/2 Semestre/Programacao Concorrente Paralela/Projeto 1/sistlinear2k.dat
+
+# Livros/PDFs grandes
+2024/2 Semestre/Organização de Computadores/Tanenbaum - Organização Estruturada de Computadores - 6a.pdf
+2025/1 Semestre/Redes/Livro/Kurose - Redes de computadores e a internet-Uma Abordagem Top-Down - 6a.pdf
+2025/2 Semestre/Programacao Concorrente Paralela/Livro/Foundations of Multithreaded, Parallel, and Distributed -- Gregory R_ Andrews.pdf
+2024/2 Semestre/Cálculo Numerico/Livro/aspectos teoricos e computacionais.pdf
+2025/1 Semestre/Grafos/Slides/Grafos - Notas de Aula.pdf
+
+# Planilha grande
+2024/2 Semestre/Probabilidade e Estatística/Trabalho 2/DadosEstradasBrasileiras.xlsx
+
+# Vídeo grande
+2026/1 Semestre/SD/Trabalho/Apresentacao_Felipe_Vitor_ETL.mp4

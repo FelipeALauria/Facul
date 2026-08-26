@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.absolutecinema.MainscreenController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="300.0" style="-fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane prefHeight="720.0" prefWidth="300.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-color: #570128; -fx-border-radius: 20; -fx-border-width: 2 2 2 2; -fx-border-style: solid;">
+               <children>
+                  <Pane layoutX="20.0" layoutY="24.0" prefHeight="76.0" prefWidth="260.0" style="-fx-background-radius: 20; -fx-background-color: #c6c6c6; -fx-border-width: 2 2 2 2; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: #c6c6c6;">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="90.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/free-user-icon-3296-thumb.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mensagemGerente" layoutX="76.0" layoutY="11.0" prefHeight="54.0" prefWidth="171.0" text="Usuário Gerente" textFill="#570128">
+                           <font>
+                              <Font name="Dubai Regular" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="botaoGerenciar" alignment="CENTER" layoutX="20.0" layoutY="203.0" mnemonicParsing="false" onAction="#menuGerenciar" onMouseClicked="#menuGerenciar" prefHeight="72.0" prefWidth="260.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Gerenciar" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                     <graphic>
+                        <Pane prefHeight="4.0" prefWidth="56.0" />
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="76.0" fitWidth="56.0" layoutX="38.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/251073.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="botaoVendas" alignment="CENTER" layoutX="20.0" layoutY="324.0" mnemonicParsing="false" onAction="#menuVendas" prefHeight="72.0" prefWidth="260.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Vendas" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                     <graphic>
+                        <Pane prefHeight="4.0" prefWidth="56.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botaoBuscar" alignment="CENTER" layoutX="20.0" layoutY="448.0" mnemonicParsing="false" onAction="#menuPesquisar" onMouseClicked="#menuPesquisar" prefHeight="72.0" prefWidth="260.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Buscar" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                     <graphic>
+                        <Pane prefHeight="4.0" prefWidth="56.0" />
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="42.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1162338.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="76.0" fitWidth="48.0" layoutX="42.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/search-icon-png-21.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="31.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023 Absolute Cinema. Todos os direitos reservados." textAlignment="JUSTIFY" wrappingWidth="237.357421875">
+                     <font>
+                        <Font name="Dubai Regular" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane prefHeight="720.0" prefWidth="980.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <Label fx:id="mensagemUsuario" layoutX="45.0" layoutY="104.0" prefHeight="54.0" prefWidth="374.0" text="Olá, Usuário!" textFill="#570128">
+               <font>
+                  <Font name="Dubai Regular" size="30.0" />
+               </font>
+            </Label>
+            <Pane layoutX="203.0" layoutY="205.0" prefHeight="236.0" prefWidth="132.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #570128; -fx-border-style: solid; -fx-border-width: 2 2 2 2;">
+               <children>
+                  <Label fx:id="numeroIngressos" layoutX="5.0" layoutY="6.0" prefHeight="72.0" prefWidth="122.0" text="11111" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingressos">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendidos">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="45.0" layoutY="205.0" prefHeight="236.0" prefWidth="132.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #570128; -fx-border-style: solid; -fx-border-width: 2 2 2 2;">
+               <children>
+                  <Label fx:id="numeroVendas" layoutX="5.0" layoutY="6.0" prefHeight="48.0" prefWidth="132.0" text="11111" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendas">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="522.0" layoutY="205.0" prefHeight="236.0" prefWidth="132.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #570128; -fx-border-style: solid; -fx-border-width: 2 2 2 2;">
+               <children>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baldes de ">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="numeroPipocas" layoutX="5.0" layoutY="7.0" prefHeight="72.0" prefWidth="122.0" text="11111" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pipocas">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c6c6c6" layoutX="8.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comidos">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="364.0" layoutY="205.0" prefHeight="236.0" prefWidth="132.0" style="-fx-background-color: #570128; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #570128; -fx-border-style: solid; -fx-border-width: 2 2 2 2;">
+               <children>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horas de ">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filmes ">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assistidas">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="numeroHoras" layoutX="2.0" layoutY="7.0" prefHeight="48.0" prefWidth="132.0" text="11111" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="676.0" layoutY="205.0" prefHeight="236.0" prefWidth="260.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #c6c6c6; -fx-border-style: solid; -fx-border-width: 2 2 2 2;">
+               <children>
+                  <Text fill="#c6c6c6" layoutX="7.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor Gerado">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#570128" layoutX="6.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="numeroLucro" layoutX="55.0" layoutY="6.0" prefHeight="72.0" prefWidth="201.0" text="111111" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Regular" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#570128" layoutX="8.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lucro Bruto">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Label layoutX="45.0" layoutY="164.0" prefHeight="54.0" prefWidth="138.0" text="Na semana:" textFill="#570128">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="458.0" prefHeight="54.0" prefWidth="138.0" text="Salas ativas:" textFill="#570128">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="458.0" prefHeight="54.0" prefWidth="252.0" text="Escala de funcionários:" textFill="#570128">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+            <Pane layoutX="42.0" layoutY="496.0" prefHeight="76.0" prefWidth="260.0" style="-fx-background-radius: 20; -fx-background-color: #570128; -fx-border-width: 2 2 2 2; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: #570128;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="90.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/free-user-icon-3296-thumb.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="70.0" layoutY="11.0" prefHeight="54.0" prefWidth="37.0" text="Sala" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="infoSala1" layoutX="107.0" layoutY="11.0" prefHeight="54.0" prefWidth="138.0" text="1 - Invocação do Mal" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="42.0" layoutY="584.0" prefHeight="76.0" prefWidth="260.0" style="-fx-background-radius: 20; -fx-background-color: #570128; -fx-border-width: 2 2 2 2; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: #570128;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="90.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/free-user-icon-3296-thumb.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="70.0" layoutY="11.0" prefHeight="54.0" prefWidth="37.0" text="Sala" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="infoSala2" layoutX="107.0" layoutY="11.0" prefHeight="54.0" prefWidth="138.0" text="2 - Transformers" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="369.0" layoutY="496.0" prefHeight="165.0" prefWidth="569.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #c6c6c6; -fx-border-style: solid; -fx-border-width: 2 2 2 2;" stylesheets="@images/tableView.css">
+               <children>
+                  <TableView fx:id="tabelaEscala" layoutX="-3.0" layoutY="1.0" prefHeight="165.0" prefWidth="578.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@images/tableView.css">
+                    <columns>
+                      <TableColumn fx:id="IDcol" prefWidth="75.0" style="-fx-alignment: center;" text="ID" />
+                      <TableColumn fx:id="nomeCol" prefWidth="208.0" style="-fx-alignment: center;" text="Nome " />
+                        <TableColumn fx:id="escalaCol" prefWidth="141.0" text="Escala" />
+                        <TableColumn fx:id="areaCol" prefWidth="149.0" text="Área" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Button fx:id="botaoFechar" alignment="CENTER" layoutX="928.0" layoutY="14.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #570128; -fx-background-radius: 100; -fx-border-radius: 100;" text="X" textAlignment="CENTER" textFill="#c6c6c6">
+               <font>
+                  <Font name="Dubai Medium" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets right="30.0" />
+               </opaqueInsets>
+            </Button>
+            <Pane fx:id="slideBarGerencia" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20;" visible="false">
+               <children>
+                  <Button fx:id="botaoGerenciarFuncionarios" alignment="CENTER" layoutX="5.0" layoutY="204.0" mnemonicParsing="false" onAction="#telaGerenciarFuncionarios" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Funcionários" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoGerenciarBomboniere" alignment="CENTER" layoutX="4.0" layoutY="324.0" mnemonicParsing="false" onAction="#telaGerenciarBomboniere" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text=" Bomboniere" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoGerenciarFilmes" alignment="CENTER" layoutX="5.0" layoutY="448.0" mnemonicParsing="false" onAction="#telaGerenciarFilmes" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Filmes" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="retornarGerenciar" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#retornarGerenciar" onMouseClicked="#retornarGerenciar" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 100; -fx-border-radius: 100;" textAlignment="CENTER" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="30.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/1212765-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#570128" layoutX="24.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu de gerência" textAlignment="CENTER" wrappingWidth="162.34000396728516">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="slideBarPesquisa" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20;" visible="false">
+               <children>
+                  <Button fx:id="botaoPesquisarFuncionarios" alignment="CENTER" layoutX="5.0" layoutY="204.0" mnemonicParsing="false" onAction="#telaBuscarFuncionarios" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Funcionários" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoPesquisarProdutos" alignment="CENTER" layoutX="4.0" layoutY="324.0" mnemonicParsing="false" onAction="#telaBuscarProdutos" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Produtos" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoPesquisarFilmes" alignment="CENTER" layoutX="5.0" layoutY="448.0" mnemonicParsing="false" onAction="#telaBuscarFilmes" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Filmes" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="retornarPesquisa" alignment="CENTER" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" onAction="#retornarPesquisar" onMouseClicked="#retornarPesquisar" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 100; -fx-border-radius: 100;" textAlignment="CENTER" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="30.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/1212765-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#570128" layoutX="24.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu de busca" textAlignment="CENTER" wrappingWidth="162.34000396728516">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="slideBarVendas" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #c6c6c6; -fx-background-radius: 20; -fx-border-radius: 20;" visible="false">
+               <children>
+                  <Button fx:id="botaoVendasGeral" alignment="CENTER" layoutX="5.0" layoutY="204.0" mnemonicParsing="false" onAction="#telaVendasGeral" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Geral" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoVendasBomboniere" alignment="CENTER" layoutX="4.0" layoutY="324.0" mnemonicParsing="false" onAction="#telaVendasBomboniere" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text=" Bomboniere" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botaoVendasFilme" alignment="CENTER" layoutX="5.0" layoutY="448.0" mnemonicParsing="false" onAction="#telaVendasFilmes" prefHeight="72.0" prefWidth="190.0" style="-fx-border-radius: 20; -fx-border-color: #FFFFFF; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-background-radius: 20; -fx-background-color: #FFFFFF;" text="Filmes" textFill="#570128">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="retornarVendas" alignment="CENTER" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" onAction="#retornarVendas" onMouseClicked="#retornarPesquisar" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #c6c6c6; -fx-background-radius: 100; -fx-border-radius: 100;" textAlignment="CENTER" textFill="#c6c6c6">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="30.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/1212765-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#570128" layoutX="24.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendas" textAlignment="CENTER" wrappingWidth="162.34000396728516">
+                     <font>
+                        <Font name="Dubai Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>
